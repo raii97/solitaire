@@ -1,38 +1,103 @@
-.App {
+.solitaire-app{
+    display: flex;
+    flex-direction:column;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    height: 100vh;
+    background-image: radial-gradient(white 0.5px, rgba(238, 130, 238, 0.277) 0.5px);
+    background-size: 10px 10px;
+    width:770px
+}
+
+.dealt-cards{
+    display: flex;
+}
+
+.ace-column{
+    border: 1px dashed black;
+    height: 155px;
+    width: 105px; 
+    margin-right: 5px;
+}
+
+.top-box{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 50px;    
+}
+
+.aces-box{
+    display:flex;
+    
+}
+
+.deck-box{
+    display:flex;
+}
+
+.column{
+    width: 110px;
+    position:relative;   
+
+}
+
+.empty-col{
+    border: 1px dashed black;
+    height: 155px;
+}
+
+.card-placeholder{
+    height: 155px;
+    width: 105px; 
+    background-image: url('/public/backcard.png');
+    background-size: cover;
+    cursor: pointer;
+}
+
+.restart-btn{
+  background: linear-gradient(to bottom right, #ce96d7, #FF9A5A);
+  width: 130px;
+  height: 40px;
+  margin-bottom: 10px;
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
   text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  align-self:flex-end
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.moves{
+    font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.start{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.start-game{
+    height: 100px;
+    width: 200px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.game-controls{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
 }
